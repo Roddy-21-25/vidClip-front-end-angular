@@ -23,13 +23,14 @@ import { ApiServiceService } from './api-service.service';
     HttpClientModule,
     FormsModule,
     NgxPaginationModule
-  ],providers: [
-    ApiServiceService,
-    {
-      provide: HTTP_INTERCEPTORS,
-      useClass: ProxyInterceptor,
-      multi: true,
-    },
-  ],
+  ]
+  // ,providers: [
+  //   ApiServiceService,
+  //   {
+  //     provide: HTTP_INTERCEPTORS,
+  //     useClass: ProxyInterceptor,
+  //     multi: true,
+  //   },
+  // ],
 })
 export class SearchVideosModule { }

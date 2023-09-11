@@ -16,7 +16,7 @@ export class ApiServiceService {
   // }
 
   // urlBaseApi: string = 'https://localhost:7136/api/VidClip?prompt=';
-  urlBaseApi: string = 'http://www.vidclip.somee.com/api/VidClip?prompt=';
+  urlBaseApi: string = 'https://cors-anywhere.herokuapp.com/http://www.vidclip.somee.com/api/VidClip?prompt=';
   GetVideosByPromt(prompt: string): Observable<Response_Video_Data>{
     return this._http.get<Response_Video_Data>(this.urlBaseApi + prompt);
   }
