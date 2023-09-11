@@ -8,8 +8,10 @@ import { FormsModule } from '@angular/forms';
 // Pagination
 import {NgxPaginationModule} from 'ngx-pagination';
 
-// Http
-import { HttpClientModule } from '@angular/common/http';
+// Http || Intercerptos
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { ProxyInterceptor } from './proxy.interceptor';
+import { ApiServiceService } from './api-service.service';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,13 @@ import { HttpClientModule } from '@angular/common/http';
     HttpClientModule,
     FormsModule,
     NgxPaginationModule
-  ]
+  ],providers: [
+    ApiServiceService,
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: ProxyInterceptor,
+      multi: true,
+    },
+  ],
 })
 export class SearchVideosModule { }
