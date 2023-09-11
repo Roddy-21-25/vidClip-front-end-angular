@@ -1,0 +1,22 @@
+.box{
+    background-color: white;
+    border-radius: 24px;
+    padding: 5px;
+    margin-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.logo{
+    width: 200px;
+    height: auto;
+}
+
+h1{
+    font-weight: 500;
+}
+
+p{
+    font-weight: 400;
+    font-size: 15px;
+}

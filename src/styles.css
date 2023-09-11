@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue";
+  /* This is the Code for the Background animation */
+  background: linear-gradient(
+    300deg,
+    #343090,
+    #5f59f7,
+    #6592fd,
+    #44c2fd,
+    #8c61ff
+  );
+  background-size: 300% 300%;
+  animation: gradient-animation 30s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

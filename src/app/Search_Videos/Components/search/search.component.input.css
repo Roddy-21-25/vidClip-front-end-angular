@@ -1,0 +1,35 @@
+.Search_Button {
+  padding: 5px;
+  background: none;
+  border-radius: 10px;
+  border: 1px solid white;
+  color: white;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.Search_Button:hover {
+  box-shadow: 0px 0px 10px rgb(255, 255, 255);
+  background-color: white;
+  color: #343090;
+}
+
+h2 {
+  color: white;
+}
+
+.box-pagination{
+  display: flex;
+  justify-content: center; /* Centra horizontalmente en el eje X */
+  align-items: center; /* Centra verticalmente en el eje Y */
+}
+
+.Button-pagination{
+  box-shadow: 2px 4px 10px rgba(32, 32, 32, 0.234);
+  background: rgba(171, 198, 255, 0.3);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.261);
+  border-radius: 24px;
+  padding-top: 14px;
+  padding-right: 35px;
+}

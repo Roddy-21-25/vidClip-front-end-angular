@@ -1,0 +1,39 @@
+.video_box {
+  box-shadow: 2px 4px 10px rgba(32, 32, 32, 0.234);
+  background: rgba(171, 198, 255, 0.3);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.261);
+  border-radius: 24px;
+  padding: 10px;
+
+  display: inline-block;
+}
+
+.video-card {
+  width: 100%; /* El video se ajustará al 100% del ancho del div */
+  height: 100%; /* El video se ajustará al 100% de la altura del div */
+  border-radius: 10px;
+}
+
+.video_box a {
+  text-decoration: none;
+}
+
+.UserText {
+  color: rgba(255, 255, 255, 0.818);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+
+.UserMeta {
+  color: #ffffff;
+  font-style: italic;
+  margin-left: 5px;
+}
+
+.bi-person-circle {
+  color: #ffffff;
+  margin-bottom: 5px;
+  margin-right: 10px;
+}

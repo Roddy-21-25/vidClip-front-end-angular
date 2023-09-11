@@ -1,0 +1,47 @@
+
+.details-section {
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    box-shadow: 0px 0px 10px rgba(32, 32, 32, 0.04);
+    padding-top: 10px;
+    padding-bottom: 1px;
+  }
+  
+  .Quality-text, .FPS-text, .Resolution-text{
+      color: #343090;
+      font-weight: 500;
+  }
+  
+  .FPS-text{
+      margin-left: 20px;
+  }
+  
+  .Pexel-button{
+      padding: 5px;
+      background: none;
+      border-radius: 10px;
+      border: 1px solid white;
+      color: white;
+      transition: box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .bi-caret-right-fill{
+      transition: transform 0.3s ease,  margin-left 0.3s ease;
+  }
+  
+  .bi-caret-right-fill{
+      margin-bottom: 2px;
+  }
+  
+  .Pexel-button:hover .bi-caret-right-fill{
+      transform: scale(1.2,1.2);
+      margin-left: 10px;
+  }
+  
+  .Pexel-button:hover{
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+    background-color: white;
+    color: #343090;
+  }
